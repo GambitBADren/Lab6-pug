@@ -1,0 +1,354 @@
+block variables
+    - var grapg = 'График'
+    - var title = 'Демография'
+    - var filter = 'Фильтр'
+    - var sort= 'Сортировка'
+
+    -
+        var yesno = ['Первый уровень', 'Второй уровень']
+
+    - 
+        var KCYNE = [
+            {
+                'lv': 'Первый уровень',
+                'cont':'Континент',
+                'count':'Страна',
+                'year':'Год', 
+                'naselen':'Население', 
+                'exit':'Выход к морю'
+            },
+            {
+                'lv': 'Второй уровень',
+                'cont':'Континент',
+                'count':'Страна',
+                'year':'Год', 
+                'naselen':'Население', 
+                'exit':'Выход к морю'
+            }
+        ]
+    -
+        var Hoe = ['Континент', 'Название страны', 'Год от', 'Численность населения от', 'Выход к морю']
+
+    - 
+        var TextJopa = ['©️ Ушницкий Т.И., группа 1, 2024-2025']
+    -
+        var dictMenu = { 
+            'Главная страница': 'index.html', 
+            'Таблица': "table.html",  
+            'Меню 3': "#", 
+            'Меню 4': "#"
+        }
+    -
+        var N1 = [
+            {
+                'first' : 'Значение по оси Ox',
+                'second' : 'Результат'
+            },
+        ]
+
+    - 
+        var N = [
+            {
+                'first' : 'Года ',
+                'second' : 'Макс. численность населения',
+                'numb' : '1'
+            },
+            {
+                'first' : 'Континент ',
+                'second' : 'Ср. численность населения',
+                'numb' : '2'
+            },
+            {
+                'first' : 'Выход к морю',
+                'second' : 'Мин. численность населения',
+                'numb' : '3'
+            }
+        ]
+
+
+    -
+        var listname = ['Континет', 'Страна', 'Год', 'Население', 'Выход к морю']
+
+    - 
+        var listSections = [
+             {
+                 'continent': 'Евразия',
+                 'img': 'india.jpg',
+                 'year': '2022',
+                 'kolvo': '1438069596',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'india.jpg',
+                 'year': '2023',
+                 'kolvo': '1425423212',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'china.jpg',
+                 'year': '2022',
+                 'kolvo': '1422584933',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'china.jpg',
+                 'year': '2023',
+                 'kolvo': '1425179569',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'СевернаяАмерика',
+                 'img': 'USA.jpg',
+                 'year': '2022',
+                 'kolvo': '343477335',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'СевернаяАмерика',
+                 'img': 'USA.jpg',
+                 'year': '2023',
+                 'kolvo': '341534046',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'indonesia.jpg',
+                 'year': '2022',
+                 'kolvo': '281190067',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'indonesia.jpg',
+                 'year': '2023',
+                 'kolvo': '278830529',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'pakistan.jpg',
+                 'year': '2023',
+                 'kolvo': '247504495',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'pakistan.jpg',
+                 'year': '2022',
+                 'kolvo': '243700667',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Африка',
+                 'img': 'nigeria.jpg',
+                 'year': '2023',
+                 'kolvo': '227882945',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Африка',
+                 'img': 'nigeria.jpg',
+                 'year': '2022',
+                 'kolvo': '223150896',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'ЮжнаяАмерика',
+                 'img': 'brazil.jpg',
+                 'year': '2023',
+                 'kolvo': '211140729',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'ЮжнаяАмерика',
+                 'img': 'brazil.jpg',
+                 'year': '2022',
+                 'kolvo': '210306415',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'ban.jpg',
+                 'year': '2023',
+                 'kolvo': '171466990',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'ban.jpg',
+                 'year': '2022',
+                 'kolvo': '169384897',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'russia.jpg',
+                 'year': '2023',
+                 'kolvo': '145440500',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'russia.jpg',
+                 'year': '2022',
+                 'kolvo': '145579899',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'ЮжнаяАмерика',
+                 'img': 'mexico.jpg',
+                 'year': '2023',
+                 'kolvo': '129739759',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'ЮжнаяАмерика',
+                 'img': 'mexico.jpg',
+                 'year': '2022',
+                 'kolvo': '123739759',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'efi.jpg',
+                 'year': '2022',
+                 'kolvo': '128613117',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'efi.jpg',
+                 'year': '2023',
+                 'kolvo': '122613117',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'japan.jpg',
+                 'year': '2023',
+                 'kolvo': '124370947',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'japan.jpg',
+                 'year': '2022',
+                 'kolvo': '124997578',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'fil.jpg',
+                 'year': '2023',
+                 'kolvo': '114891199',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'fil.jpg',
+                 'year': '2022',
+                 'kolvo': '113964338',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Африка',
+                 'img': 'egy.jpg',
+                 'year': '2023',
+                 'kolvo': '114535772',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Африка',
+                 'img': 'egy.jpg',
+                 'year': '2022',
+                 'kolvo': '112618250',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Африка',
+                 'img': 'drk.jpg',
+                 'year': '2023',
+                 'kolvo': '105789731',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'vie.jpg',
+                 'year': '2022',
+                 'kolvo': '102396968',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'iran.jpg',
+                 'year': '2022',
+                 'kolvo': '90608707',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'iran.jpg',
+                 'year': '2023',
+                 'kolvo': '89524246',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'tur.jpg',
+                 'year': '2023',
+                 'kolvo': '87270501',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'tur.jpg',
+                 'year': '2022',
+                 'kolvo': '87070501',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'ger.jpg',
+                 'year': '2023',
+                 'kolvo': '84548231',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'ger.jpg',
+                 'year': '2022',
+                 'kolvo': '84086227',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'tha.jpg',
+                 'year': '2023',
+                 'kolvo': '71702435',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'tha.jpg',
+                 'year': '2022',
+                 'kolvo': '71735329',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'bri.jpg',
+                 'year': '2023',
+                 'kolvo': '68.682.962',
+                 'bool': 'Да'
+             },
+             {
+                 'continent': 'Евразия',
+                 'img': 'bri.jpg',
+                 'year': '2022',
+                 'kolvo': '68.179.315',
+                 'bool': 'Да'
+             }
+         ]

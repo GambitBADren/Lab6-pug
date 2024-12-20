@@ -1,0 +1,56 @@
+extends template
+
+block content
+	details
+		summary= grapg
+		table(border="1")
+			each item in N1
+				tr
+					td= item.first
+					td= item.second
+				each item in N
+					tr
+						td
+							input(type= 'radio' name= 'OX' value= item.numb placeholder= item.first) 
+							text= item.first
+						td
+							input(type= 'checkbox' name= 'Rex' value= item.numb)
+							text= item.second
+		
+	details
+		summary= filter
+		each item in Hoe
+			p
+					
+				text= item
+				input(type= 'text')
+
+
+	details
+		summary= sort
+		each lvl in KCYNE
+			input(type= 'button' name= 'YesNo')
+			text= lvl.lv
+			select 
+				option(value= '0')= lvl.cont
+				option(value= '1')= lvl.count
+				option(value= '2')= lvl.year
+				option(value= '3')= lvl.naselen
+				option(value= '4')= lvl.exit
+			br
+
+				
+
+	table(border="1")
+		tbody 
+			tr 
+				each name in listname
+					th= name
+			each item in listSectionsTable
+				tr
+					td= item.continent
+					td
+						img(src= require("./images/" + item.img))
+					td= item.year
+					td= item.kolvo
+					td= item.bool
